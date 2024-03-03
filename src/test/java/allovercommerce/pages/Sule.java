@@ -7,11 +7,5 @@ public class Sule {
     public Sule() {
 
     }
-    @FindBy(xpath = "//button[@data-taxonomy='product_brand']"
-    public WebElement locate ;
-
-
-
-
 
 }
