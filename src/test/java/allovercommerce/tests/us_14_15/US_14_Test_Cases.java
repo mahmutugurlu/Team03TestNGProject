@@ -365,8 +365,7 @@ public class US_14_Test_Cases {
         ReusableMethods.bekle(2);
         vendorPages.addNewButtonSY.click();
 
-
-//        Acilan sayfada Product brands alaninda Add new Product brands yazisina tiklanir
+//     Acilan sayfada Product brands alaninda Add new Product brands yazisina tiklanir
         ReusableMethods.scroll(vendorPages.addNewProductBrandsButtonSY);
         ReusableMethods.click(vendorPages.addNewProductBrandsButtonSY);
         ReusableMethods.bekle(2);
