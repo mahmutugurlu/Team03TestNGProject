@@ -1,7 +1,17 @@
 package allovercommerce.pages;
 
 
+import allovercommerce.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class RegisterPages {
+
+    public RegisterPages() {
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
 
 
 
@@ -171,47 +181,23 @@ public class RegisterPages {
 
 
 
-
-
-
-
-
-
-
-
-
-
     // Sevin Acar 184-234
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//a[@class='register inline-type']")
+    public WebElement register;
+    @FindBy(xpath = "(//*[.='Become a Vendor'])[2]")
+    public WebElement becomeAVendor;
+    @FindBy(css = "#passoword")
+    public WebElement passwordKutusu;
+    @FindBy(css = "#confirm_pwd")
+    public WebElement confirmPassword;
+    @FindBy(xpath = "//*[.='Too short']")
+    public WebElement tooShortYazisi;
+    @FindBy(xpath = "//*[.='Weak']")
+    public WebElement weakYazisi;
+    @FindBy(xpath = "//*[.='Good']")
+    public WebElement goodYazisi;
+    @FindBy(xpath = "//*[.='Strong']")
+    public WebElement strongYazisi;
 
 
 
