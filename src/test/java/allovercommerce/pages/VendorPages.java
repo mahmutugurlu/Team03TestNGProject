@@ -283,9 +283,6 @@ public class VendorPages {
 
 
 
-
-
-
     //Sule Yüksel 286-336
     @FindBy(xpath = "//a[@class='login inline-type']")
     public WebElement signinButtonSY;
@@ -309,7 +306,7 @@ public class VendorPages {
     public WebElement imageButtonSY;
     @FindBy(id = "__wp-uploader-id-1")
     public WebElement selectFilesButtonSY;
-    @FindBy(xpath = "//button[normalize-space()='Select']")
+    @FindBy(xpath = "(//button[@class='button media-button button-primary button-large media-button-select'])[2]")
     public WebElement selectButtonSY;
     @FindBy(xpath = "//input[@id='variations_image_0_remove_button']")
     public WebElement xButtonSY;
@@ -350,7 +347,7 @@ public class VendorPages {
     //US_15 LOCATELERI
     @FindBy(css = "#wcfm_products_manage_form_inventory_head" ) //TC01 locate'leri
     public WebElement inventoryButtonSY;
-    @FindBy(id = "wcfm_products_manage_form_shipping_head")
+    @FindBy(xpath = "//div[contains(text(),'Shipping')]")
     public WebElement shippingButtonSY;
     @FindBy(id = "wcfm_products_manage_form_attribute_head")
     public WebElement attributesButtonSY;
@@ -368,8 +365,6 @@ public class VendorPages {
     public WebElement uploadFilesButtonSY;
     @FindBy(css = "#__wp-uploader-id-4") //(//li[@class='attachment details selected save-ready'])[3]  (//li[@role='checkbox'])[3]
     public WebElement selectFilesButton2SY;
-    @FindBy(xpath = "((//li[@class='attachment details selected save-ready'])[3]")
-    public WebElement galerydenSecilenResimSY;
     @FindBy(xpath = "(//div[@class='media-toolbar-primary search-form'])[2]")
     public WebElement addToGalleryButtonSY;
     @FindBy(xpath = "(//input[@type='checkbox'])[3]")
@@ -386,13 +381,13 @@ public class VendorPages {
     public WebElement allowBackordersDDM_SY;
     @FindBy(css = "#sold_individually")
     public WebElement soldIndividuallyClickButtonSY;
-    @FindBy(css = "#wcfm_products_simple_submit_button")
+    @FindBy(xpath = "//input[@id='wcfm_products_simple_submit_button']")
     public WebElement submitButtonSY;
     @FindBy(xpath = "//*[text()='Product Successfully Published.']")
     public WebElement kayitMesajiSY;
     @FindBy(xpath = "//h2[.='Edit Product']")
     public WebElement editProductYazisiSY;
-    @FindBy(id = "#weight")    //TC03 locate'leri
+    @FindBy(xpath = "//input[@id='weight']")    //TC03 locate'leri
     public WebElement weightBoxSY;
     @FindBy(css ="#shipping_class")
     public WebElement shippingClassKutusuDDM_SY;
@@ -402,9 +397,11 @@ public class VendorPages {
     public WebElement attributesColorClickButtonSY;
     @FindBy(id ="attributes_is_active_2")
     public WebElement attributesSizeClickButtonSY;
-    @FindBy(id = "#attributes_value_1")
+    @FindBy(xpath = "(//ul[@aria-relevant='additions removals'])[2]")
     public WebElement colorDDM_SY;
-    @FindBy(xpath = "//input[@id='#attributes_value_1']")
+    @FindBy(css = "#attributes_is_visible_1")
+    public WebElement colorYeni;
+    @FindBy(xpath = "//input[@id='attributes_is_visible_1']")
     public WebElement visibleOnProductPageCheckboxSY;
     @FindBy(xpath = "(//*[text()='Select all'])[1]")
     public WebElement colorSelectAllButtonSY;
@@ -420,14 +417,14 @@ public class VendorPages {
     public WebElement sizeSelectAllButtonSY;
     @FindBy(xpath = "(//*[text()='Select none'])[2]")
     public WebElement sizeSelectNoneButtonSY;
-    @FindBy(xpath = "(//*[text()='Add New'])[3]")
+    @FindBy(xpath = "//button[@class='button wcfm_add_attribute']")
     public WebElement sizeAddNewButtonSY;
-    @FindBy(css = "#attributes_is_visible_2")
+    @FindBy(xpath = "//button[@class='button wcfm_add_attribute']")
+    public WebElement sizeNameButtonSY;
+    @FindBy(css = "#attributes_is_visible_2")   //input[@id='attributes_name_5']
     public WebElement sizeVisibleOnProductPageCheckboxSY;
     @FindBy(css = "#__wp-uploader-id-1")
     public WebElement selectFilesButonuSY;
-
-
 
 
 
