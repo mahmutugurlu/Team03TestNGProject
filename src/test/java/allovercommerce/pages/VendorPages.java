@@ -180,21 +180,32 @@ public class VendorPages {
 
     //Sevin Acar 184-234
 
+    @FindBy(xpath = "//*[@id='user_email']")
+    public WebElement emailBoxVendor;
     @FindBy(id = "menu-item-1079")
     public WebElement myAccountButonuSA;
+    @FindBy(xpath = "//h2[@class='page-title']")
+    public WebElement Myaccountyazisi;
+    @FindBy(xpath = "//*[@class='login logout inline-type']")
+    public WebElement signOutButonu;
+    @FindBy(xpath = "(//*[@id='username'])[1]")
+    public WebElement userNameOrEmail;
+    @FindBy(xpath = "//a[@href='https://allovercommerce.com/my-account-2/edit-address/billing/']")//Is
+    public WebElement Addbutonu;
     @FindBy(xpath = "(//li//a)[7]")
     public WebElement adressesButonuSA;
     @FindBy(xpath = "//*[@href='https://allovercommerce.com/my-account-2/edit-address/billing/']")
     public WebElement billingAddressAddButonuSA;
     @FindBy(xpath = "//*[@id='billing_first_name']")
     public WebElement billingAddressFirstNameSA;
+
     @FindBy(xpath = "//*[@id='billing_last_name']")
     public WebElement billingAddressLastNameSA;
     @FindBy(xpath = "//*[@id='billing_company']")
     public WebElement billingAddressCompanyNameSA;
-    @FindBy(xpath = "//*[@id='billing_country']")
+    @FindBy(xpath = "//span[@id='select2-billing_country-container']")
     public WebElement billingAddressCountryRegionDdmSA;
-    @FindBy(xpath = "//*[@value='mathew.adit@farmoaks.com']")
+    @FindBy(xpath = "//*[@id=\"billing_email\"]")
     public WebElement billingAddressEmailSA;
     @FindBy(xpath = "//*[@id='billing_address_1']")
     public WebElement billingAddressStreetAddressKutusuSA;
@@ -232,6 +243,27 @@ public class VendorPages {
     public WebElement becomeAVendorLinkiSA;
     @FindBy(xpath = "//*[@id=\"user_email\"]")
     public WebElement registrationEmailSA;
+    @FindBy(xpath = "(//li)[6]")
+    public WebElement storManager;
+    @FindBy(xpath = "(//li)[7]")
+    public WebElement orders;
+    @FindBy(xpath = "(//li)[8]")
+    public WebElement downloads;
+    @FindBy(xpath = "(//li)[9]")
+    public WebElement address;
+    @FindBy(xpath = "(//li)[10]")
+    public WebElement accountDetails;
+    @FindBy(xpath = "(//li)[11]")
+    public WebElement wishList;
+    @FindBy(xpath = "(//li)[12]")
+    public WebElement support;
+    @FindBy(xpath = "(//li)[13]")
+    public WebElement followings;
+    @FindBy(xpath = "(//li)[14]")
+    public WebElement logOut;
+    @FindBy(xpath = "(//a)[15]")
+    public WebElement Dashboard;
+
 
 
 
@@ -245,43 +277,32 @@ public class VendorPages {
     public WebElement password;
     @FindBy(xpath = " //*[@id='login']")
     public WebElement loginButton;
-
     @FindBy(xpath = " //*[@id='menu-item-1079']")
     public WebElement myAccountButton;
     @FindBy(xpath = "//*[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address']")
     public WebElement addressesButton;
     @FindBy(xpath = "//*[text()='Edit Your Shipping Address']")
     public WebElement shippingAddressButton;
-
     @FindBy(css = "#shipping_first_name")
     public WebElement firstName;
     @FindBy(css = "#shipping_last_name")
     public WebElement lastName;
-
     @FindBy(css = "#select2-shipping_country-container")
     public WebElement countryAddress;
-
     @FindBy(xpath = "//*[@id='shipping_address_1']")
     public WebElement streetAddress;
-
     @FindBy(xpath = "//*[@id='shipping_address_2']")
     public WebElement streetAddress2;
-
     @FindBy(xpath = "//*[@name='shipping_city']")
     public WebElement townAddress;
-
     @FindBy(css = "#select2-shipping_state-container")
     public WebElement stateAddress;
-
     @FindBy(xpath = "//*[@name='shipping_postcode']")
     public WebElement zipCode;
-
     @FindBy(xpath = "//*[@name='save_address']")
     public WebElement SaveAddressButton;
     @FindBy(xpath = "//*[text()='Address changed successfully.']")
     public WebElement successfullyMessage;
-
-
 
     //Sule Yüksel 286-336
     @FindBy(xpath = "//a[@class='login inline-type']")
