@@ -60,7 +60,7 @@ public class Us_12 {
         ReusableMethods.scroll(vendorPages.logOut);
 
         ReusableMethods.click(vendorPages.billingAddressCountryRegionDdmSA);
-        vendorPages.billingAddressCountryRegionDdmSA.sendKeys("Germany", Keys.ENTER);
+
         vendorPages.billingAddressStreetAddressKutusuSA.sendKeys("Biberweg 5");
         vendorPages.billingAddressZipCodeSA.sendKeys("85152");
         vendorPages.billingAddressTownCitySA.sendKeys("Köln");
